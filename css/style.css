@@ -10,16 +10,49 @@ a {
 h1 {
     font-size: 80px;
     font-weight: 600;
+    letter-spacing: -2.5px;
+    line-height: 1.1;
     color: #192b59;
+    max-width: 600px;
+    margin-bottom: 60px;
+}
+.title-h2 {
+    font-size: 50px;
+    font-weight: 600;
+    color: #192b59;
+}
+.title-h2 span {
+    display: block;
+    font-size: 16px;
+    font-weight: 800;
+    color: #1085e4;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+.page-stat .title-h2 {
+    text-align: center;
+}
+.wrap {
+    max-width: 1110px;
+    margin: 0 auto;
 }
 .nav {
     font-size: 12px;
-    color: #6e7ea9;
-    text-transform: uppercase;
+    
+    text-transform: uppercase;  
     font-weight: 700;
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+}
+.nav>li {
+    padding: 0 15px;
+}
+.nav-item {
+    color: #6e7ea9;
 }
 .btn-primary {
     color: #fff;
@@ -92,6 +125,28 @@ h1 {
     font-size: 14px;
     font-weight: 600;
     color: #1085e4;
-}                
+} 
+.list-stat {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+
+}
+.list-stat>li {
+    font-size: 12px;
+    font-weight: 700;
+    color: #1085e4;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+ 
+}
+.list-stat>li>span {
+    display: block;
+    font-size: 60px;
+    color: #bacbdc;
+    margin-bottom: 20px;
+} 
+
     
     
