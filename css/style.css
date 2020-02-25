@@ -60,7 +60,19 @@ h1 {
 
 .wrap {  
     max-width: 1110px;
-    margin: 0 auto;
+    margin: 0 auto; 
+}
+.box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 325px;
+}
+.logo {
+    display: block;
+    width: 181px;
+    height: 49px;
+    background-image: url(../img/Logo.png);
 }
 .wrap h2 {
     margin-bottom: 90px;
@@ -75,10 +87,21 @@ h1 {
     display: flex;
 }
 .nav>li {
-    padding: 0 15px;
+    padding: 0 20px;
 }
 .nav-item {
     color: #6e7ea9;
+    letter-spacing: 2px;
+}
+.screen-img {
+    display: block;
+    background-image: url(../img/header-scren.png);
+    background-repeat: no-repeat;
+    width: 895px;
+    height: 740px;
+    position: absolute;
+    right: 0;
+    top: 180px; 
 }
 .btn-primary {
     color: #fff;
@@ -135,6 +158,36 @@ h1 {
 .btn-group a + a {
     margin-left: 15px;
 }
+.list-company {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+.list-company-item {
+    display: block;
+}
+.company-one {
+    flex-basis: 198x;
+    height: 58px;    
+}
+.company-two {
+    flex-basis: 200x;
+    height: 69px;
+}
+.company-three {
+    flex-basis: 200x;
+    height: 47px;
+}
+.company-four {;
+    flex-basis: 200x;
+    height: 69px;
+}
+
 .grid h2 {
     font-size: 40px;
     color: #192b59;
@@ -261,7 +314,21 @@ font-size: 14px;
 }
 
 /*PAGE*/
+.page-header {
+    background-image: url(../img/Header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 53px 0 330px 0;
+    position: relative;
+}
+.page-company {
+    background-color: #1085e4;
+    background-image: url(../img/bg-two.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 106px 0 99px;
 
+}
 .page-stat, .page-screen {
     background-color: #edf6ff;
     
@@ -274,6 +341,18 @@ font-size: 14px;
 }
 .page-screen {
     padding: 116px 0 0 0;
+}
+.page-subscribe {
+  
+background: rgba(10,32,144,1);
+background: -moz-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(10,32,144,1)), color-stop(100%, rgba(35,120,205,1)));
+background: -webkit-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+background: linear-gradient(135deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', endColorstr='#2378cd', GradientType=1 );
+ 
 }
 
 
