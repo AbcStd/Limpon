@@ -16,22 +16,7 @@ h1 {
     max-width: 600px;
     margin-bottom: 60px;
 }
-.title-h2 {
-    font-size: 50px;
-    font-weight: 600;
-    color: #192b59;
-    line-height: 1;
-    letter-spacing: -1px;
-}
-.title-h2 span {
-    display: block;
-    font-size: 16px;
-    font-weight: 800;
-    color: #1085e4;
-    margin-bottom: 25px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
+
 .title-40 {
     font-size: 40px;
     max-width: 600px; 
@@ -56,6 +41,13 @@ h1 {
 .page-stat .title-h2 {
     font-size: 50px;
     max-width: 500px;
+}
+.page-subscribe .title-h2 {
+    color: #fff;
+    margin: 42px 0;
+}
+.page-subscribe .title-h2 span {
+    font-size: 14px;
 }
 
 .wrap {  
@@ -100,7 +92,7 @@ h1 {
     width: 895px;
     height: 740px;
     position: absolute;
-    right: 0;
+    right: -20%;
     top: 180px; 
 }
 .btn-primary {
@@ -183,11 +175,44 @@ h1 {
     flex-basis: 200x;
     height: 47px;
 }
-.company-four {;
+.company-four {
     flex-basis: 200x;
     height: 69px;
 }
-
+.grid {
+    display: grid;
+    grid-template-areas: "a b c"
+                         "d b c"
+                         "d e f"
+                         "g e f"
+                         "g h h";
+    max-width: 1100px;
+    margin: 0 auto;                       
+}
+.grid-title {
+    grid-area: a;
+}
+.grid-item-1 {
+    grid-area: b;
+}
+.grid-item-2 {
+    grid-area: c;
+}
+.grid-item-3 {
+    grid-area: d;
+}
+.grid-item-4 {
+    grid-area: e;
+}
+.grid-item-5 {
+    grid-area: f;
+}
+.grid-item-6 {
+    grid-area: g;
+}
+.grid-text {
+    grid-area: h;
+}
 .grid h2 {
     font-size: 40px;
     color: #192b59;
@@ -200,16 +225,85 @@ h1 {
     text-transform: uppercase;
     display: block;
 }
+.grid-item {
+    text-align: center;
+    box-shadow: 0 0 5px #f4f4f4;
+}
 .grid-item h3 {
     font-size: 20px;
     color: #192b59;
     font-weight: 600;
+    margin-bottom: 18px;
 }
 .grid-item a {
     font-size: 14px;
     font-weight: 600;
     color: #1085e4;
-} 
+}
+.grid-icon {
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 auto 36px;
+}
+.grid-icon-1 {
+    background-image: url(../img/icon1.png);
+    width: 73px;
+    height: 79px;  
+}
+.grid-icon-2 {
+    background-image: url(../img/icon2.png);
+    width: 89px;
+    height: 85px;  
+}
+.grid-icon-3 {
+    background-image: url(../img/icon3.png);
+    width: 81px;
+    height: 82px;  
+}
+.grid-icon-4 {
+    background-image: url(../img/icon4.png);
+    width: 85px;
+    height: 90px;  
+}
+.grid-icon-5 {
+    background-image: url(../img/icon5.png);
+    width: 100px;
+    height: 87px;  
+}
+.grid-icon-6 {
+    background-image: url(../img/icon6.png);
+    width: 102px;
+    height: 92px;  
+}
+.box-subscribe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.title-h2 {
+    font-size: 50px;
+    font-weight: 600;
+    color: #192b59;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+.title-h2 span {
+    display: block;
+    font-size: 16px;
+    font-weight: 800;
+    color: #00bffe;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+}
+.box-subscribe-text {
+    font-size: 18px;
+    color: #dfe8ff;
+    margin-bottom: 42px;
+    max-width: 437px;
+}
+    
 .list-stat {
     display: flex;
     justify-content: space-around;
@@ -312,6 +406,40 @@ font-size: 14px;
 .box-price-item-active p {
     margin-bottom: 50px;  
 }
+.box-subscribe-user {
+    position: relative;
+}
+.box-subscribe-child {
+    flex-basis: 49%;
+}
+.box-subscribe-user input {
+    border: 2px solid #4266b8;
+    font-size: 14px;
+    border-radius: 45px;
+    background-color: transparent;
+    padding: 25px 37px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+.box-subscribe-user .btn-primary {
+    position: absolute;
+    top: 9px;
+    right: 8px;
+    padding: 17px 50px;
+} 
+.box-subscribe-user input:focus, .box-subscribe-user .btn-primary{
+    outline: none;
+} 
+
+.box-subscribe-user input::-webkit-input-placeholder {color:#b1c3ee;}
+.box-subscribe-user input::-moz-placeholder          {color:#b1c3ee;}
+.box-subscribe-user input:-moz-placeholder           {color:#b1c3ee;}
+.box-subscribe-user input:-ms-input-placeholder      {color:#b1c3ee;}
+
+
+
+
 
 /*PAGE*/
 .page-header {
@@ -343,7 +471,8 @@ font-size: 14px;
     padding: 116px 0 0 0;
 }
 .page-subscribe {
-  
+ padding: 25px 0 28px 0;
+ color: #fff; 
 background: rgba(10,32,144,1);
 background: -moz-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
 background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(10,32,144,1)), color-stop(100%, rgba(35,120,205,1)));
