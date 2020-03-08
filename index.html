@@ -131,7 +131,6 @@
     <div class="wrap page-softwere-flex">
         <div>
         <div class="setting-icon"></div>
-        
             <h2 class="title-h2">Grab Your  Software With Amazing  Features</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -252,7 +251,10 @@
             <li><span>120</span> awards</li>
         </ul> 
     </div>
+    <div class="object-circle"></div>
+    <div class="object-rhombus"></div>
 </div>
+
 <div class="page-app">
 <div class="wrap">
     <div class="content-app">
@@ -413,32 +415,56 @@
                 <img class="avatar" src="img/Ricardo.png" alt="Ricardo">
                 <p class="position">founder</p>
                 <p class="name">Ricardo T. Obrien</p>
-                <button class="btn-more" type="button"></button>
-            </div>
+                <button class="btn-team btn-more btn-ricardo" type="button"><span></span></button>
+                <ul class="social-team social-ricardo" style="display: none;">
+                    <li><a href="" target="_blank" class="btn-team btn-fb"> <span></span></a></li>
+                    <li><a href="" target="_blank" class="btn-team btn-tw"> <span></span></a></li>
+                    <li><a href="" target="_blank" class="btn-team btn-be"> <span></span></a></li>
+                    <li><a href="" target="_blank" class="btn-team btn-web"> <span></span></a></li>
+                </ul>
+            </div>  
             <div class="box-team-item">
                 <img class="avatar" src="img/Alberto.png" alt="Alberto">
                <p class="position">ceo</p>
                <p class="name">Alberto Del Rio</p>
-               <button class="btn-more" type="button"></button>
+               <button class="btn-team btn-more btn-alberto" type="button"><span></span></button>
+            <ul class="social-team social-alberto" style="display: none;">
+                <li><a href="" target="_blank" class="btn-team btn-fb"> <span></span></a></li>
+                <li><a href="" target="_blank" class="btn-team btn-tw"> <span></span></a></li>
+                <li><a href="" target="_blank" class="btn-team btn-be"> <span></span></a></li>
+                <li><a href="" target="_blank" class="btn-team btn-web"> <span></span></a></li>
+            </ul> 
            </div>
-           <div class="box-team-item">
+           <div class="box-team-item"> 
                 <img class="avatar" src="img/Thomas.png" alt="Thomas">
                <p class="position">designer</p>
-               <p class="name">Thomas Alva Adison</p>
-               <button class="btn-more" type="button"></button>
+               <p class="name">Thomas Alva Adison</p>    
+               <button class="btn-team btn-more btn-thomas" type="button"><span></span></button>
+            <ul class="social-team social-thomas" style="display: none;">
+                <li><a href="" target="_blank" class="btn-team btn-fb"> <span></span></a></li>
+                <li><a href="" target="_blank" class="btn-team btn-tw"> <span></span></a></li>
+                <li><a href="" target="_blank" class="btn-team btn-be"> <span></span></a></li>
+                <li><a href="" target="_blank" class="btn-team btn-web"> <span></span></a></li>
+            </ul>
            </div>
         </div>
      </div>
     
  </div>
  <div class="page-form">
-     <h2>Start Your Free Trail No Need Credit Card.</h2>
-     <form action="sendLetter"> 
-         <input type="text" placeholder="Enter your name here">
-         <input type="email" placeholder="Enter your e-mail here">
-         <textarea name="textMessge" placeholder="Enter your message here"></textarea>
-         <button type="submit" class="btn-primary"><span></span>submit now</button>
-     </form>
+     <div class="flex-form">
+         <img src="./img/screen-form.png" alt="">
+         <div>
+            <h2 class="title-h2">Start Your Free Trail No&nbsp;Need Credit Card.</h2>
+            <form class="contact-form" action="sendLetter"> 
+                    <div class="contact-form-item contact-form-name"><input type="text" placeholder="Enter your name here"></div>
+                    <div class="contact-form-item contact-form-email"><input type="email" placeholder="Enter your e-mail here"></div>
+                    <div class="contact-form-item contact-form-text"><textarea name="textMessge" placeholder="Enter your message here"></textarea></div>
+                    <button type="submit" class="btn-primary"><span></span>submit now</button>
+            </form>
+         </div>
+     </div>
+     
  </div>
  <div class="footer">  
      <div>
@@ -452,5 +478,26 @@
          </ul>
      </div>
  </div>
+ <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous">
+</script>
+<script>
+    $(document).ready(function(){
+      $(".btn-ricardo").click(function(){
+        $(".btn-ricardo").hide();
+        $(".social-ricardo").fadeIn();
+      });
+      $(".btn-alberto").click(function(){
+        $(".btn-alberto").hide();
+        $(".social-alberto").fadeIn();
+      });
+      $(".btn-thomas").click(function(){
+        $(".btn-thomas").hide();
+        $(".social-thomas").fadeIn();
+      });
+    });
+    </script>
 </body>
 </html> 
